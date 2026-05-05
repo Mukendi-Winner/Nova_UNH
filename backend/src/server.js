@@ -8,7 +8,10 @@ import { WebSocketServer } from 'ws'
 const app = express()
 const port = process.env.PORT || 3001
 const frontendOrigins = new Set([
-  process.env.FRONTEND_ORIGIN || 'http://127.0.0.1:5173',
+  ...(process.env.FRONTEND_ORIGINS || process.env.FRONTEND_ORIGIN || 'http://127.0.0.1:5173')
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean),
   'http://localhost:5173',
   'http://127.0.0.1:5173',
 ])
@@ -365,5 +368,5 @@ ${currentQuestion}`,
 })
 
 server.listen(port, () => {
-  console.log(`Nova UNH backend pret sur http://127.0.0.1:${port}`)
+  console.log(`Nova UNH backend pret sur le port ${port}`)
 })

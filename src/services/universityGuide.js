@@ -213,10 +213,42 @@ function speakFallback(text) {
   window.speechSynthesis.speak(utterance)
 }
 
-export async function startUniversityGuide(entity, callbacks = {}) {
+function getBackendWsUrl() {
+  const configuredBackendUrl = import.meta.env.VITE_BACKEND_URL
+
+  if (configuredBackendUrl) {
+    const url = new URL(configuredBackendUrl)
+    url.protocol = url.protocol === 'https:' ? 'wss:' : 'ws:'
+    url.pathname = '/guide-live'
+    url.search = ''
+    url.hash = ''
+    return url.toString()
+  }
+
+  if (!import.meta.env.DEV) {
+    return null
+  }
+
   const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws'
   const host = window.location.hostname || '127.0.0.1'
-  const wsUrl = `${protocol}://${host}:3001/guide-live`
+  return `${protocol}://${host}:3001/guide-live`
+}
+
+export async function startUniversityGuide(entity, callbacks = {}) {
+  const wsUrl = getBackendWsUrl()
+
+  if (!wsUrl) {
+    callbacks.onStatus?.('error')
+    alert("L'URL du backend n'est pas configuree. Ajoute VITE_BACKEND_URL dans Netlify puis redeploie le site.")
+
+    return {
+      stop() {
+        callbacks.onStatus?.('idle')
+        callbacks.onClose?.()
+      },
+    }
+  }
+
   const socket = new WebSocket(wsUrl)
   const audioQueue = createAudioQueue()
   let microphone = null
