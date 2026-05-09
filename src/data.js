@@ -3,6 +3,7 @@ import Batiment from './assets/batiment.png'
 import informatique from './assets/informatique.jpg'
 
 
+
 const places = [
     {
       slug: "UNH",
@@ -116,8 +117,8 @@ le nombre de personne en salle de cours varie mais c'est touours un nombre adapt
     },
 
     {
-      slug : 'Faculté de SIC-Multimedia',
-      nom : 'sic-multimedia',
+      slug : 'SIC-Multimedia',
+      nom : 'Faculté de SIC-Multimedia',
       img : 'img/x',
       description : "la faculte des sciences de l'information et de la communication + multimedia",
       fullDescription:`la faculte de sciences de l'information et de la communication et multimedia (SIC), est la cadette de toutes les facultes 
@@ -142,7 +143,7 @@ le nombre de personne en salle de cours varie mais c'est touours un nombre adapt
 
     {
       slug : 'Faculté de Medecine',
-      nom : 'Medecine',
+      nom : 'Faculté de Medecine',
       img : 'img/x',
       description : "la faculte de medecine",
       fullDescription:`la faculte de medecine d'UNH est l'avant derniere a etre cree, elle forme les futurs medecins de la nation , elle ne dispose pas encore de specialisation pour le moment , elle ne forme qu'en medecine generale, ils etudient 7 ans qui se suivent comme suit : L1,L2,L3,M1,M2,M3,M4
