@@ -3,6 +3,9 @@ import Batiment from './assets/batiment.png'
 import informatique from './assets/informatique.jpg'
 import SIC from './assets/sic.jpg'
 import Medecine from './assets/medecine.jpg'
+import Gestion from './assets/Gestion.jpg'
+import Architecture from './assets/architecture.jpg'
+
 
 
 
@@ -12,7 +15,7 @@ const places = [
       nom: "UNH",
       img: UNH,
       description : "Presentation generale de l'universite Nouveux Horizons",
-      fullDescription: `L'universite nouveaux horizons, souvent appele UNH, est une universite prive d'excellence fournissant une education et un cadre aux standards internationaux, elle existe depuis peu, elle a fete ses 10 ans recemment, son recteur est le professeur Emerite Alexis Takizala Masoso, l'universite dispose de 8 facultes, elles toutes fournissant des enseignements ou des outils pour l'enseigne a la pointe de ce qui peut se faire, il y a 8 faculte qui sont informatique, droit, Sciences des Aliments et de l'Environnement, Science de l'information et de la communication(SIC), sciences technologiques(ST) , 
+      fullDescription: `L'universite nouveaux horizons, souvent appele UNH, est une universite prive d'excellence fournissant une education et un cadre aux standards internationaux, elle existe depuis peu,cree a lubumbashi en RDC elle a fete ses 10 ans recemment, son recteur est le professeur Emerite Alexis Takizala Masoso, l'universite dispose de 8 facultes, elles toutes fournissant des enseignements ou des outils pour l'enseigne a la pointe de ce qui peut se faire, il y a 8 faculte qui sont informatique, droit, Sciences des Aliments et de l'Environnement, Science de l'information et de la communication(SIC), sciences technologiques(ST) , 
       architecture, Gestion et Medecine, 
       chacune de ces facultes disposent des outils et labo dont 
       ils ont besoin pour bien apprendre, que ce soit SAE lorsqu'ils doivent aplliquer leur connaissances dans la creation de leurs produits(biere,vin,vinaigre,yaourt etc) ,medecine qui peuvent faire des pratique de dissection grace aux cliniques universitaires UNH, ou encore les informaticiens qui ont la possibilite d'utiliser des  serveurs pour des projets et autres, l'universite est animee par plusieurs conferences au cours de l'annee qui peuvent viser le corps administratif ou les etudiants ou peut-etre les deux a la fois et des evenemts variees qu'on peut 
@@ -148,12 +151,60 @@ le nombre de personne en salle de cours varie mais c'est touours un nombre adapt
       nom : 'Faculté de Medecine',
       img : Medecine,
       description : "la faculte de medecine",
-      fullDescription:`la faculte de medecine d'UNH est l'avant derniere a etre cree, elle forme les futurs medecins de la nation , elle ne dispose pas encore de specialisation pour le moment , elle ne forme qu'en medecine generale, ils etudient 7 ans qui se suivent comme suit : L1,L2,L3,M1,M2,M3,M4
+      fullDescription:`la faculte de medecine d'UNH est l'avant derniere a etre cree, elle forme les futurs medecins de la nation , elle ne dispose pas 
+      encore de specialisation pour le moment , elle ne forme qu'en medecine generale, ils etudient 7 ans qui se suivent comme suit : L1,L2,L3,M1,M2,M3,
+      M4, ils organisent des evenements chaque annee pour mettre en avant la faculte comme un depistage du sida qu'ils organisent lors du mois du SIDA, 
+      lors des journees portes ouvertes ils organisent des depistages gratuit, test pour trouver le groupe sanguin, depistage de la malaria etc
+
+      fun fact : les etudiants de medecine sont parmis les plus occupes d'UNH, entre les long cours a maitriser et les tp + interro a preparer, 
+      ils sont souvent forcer a etudier meme quand ils ne veulent pas
+       
+       `
+  
+    
+    },
+
+    {
+      slug : 'Gestion',
+      nom : 'Faculte de Gestion',
+      img : Gestion,
+      description : "la faculte de Gestion d'UNH",
+      fullDescription:` La faculte de gestion d'UNH qui est d'ailleurs la plus grande en terme de nombres d'etudiants de tout UNH, les promotions de L1 et L2 
+      sont divises en plusieurs groupes pour arriver à avoir des groupes de taille gerable, et ces promotions ont toujours 
+      les salles 422, ou peut etre 412 qui sont parmis les salles les lus grandes d'UNH, possede 5 filieres qui sont 
+      gestion des ressources humaines,gestion des entreprises, banques et assurances, marketing et logistique, la doyenne de la faculte est madame maguy nzouzi, 
+      la vice doyenne est madame sara kitenge et la secretaire facultaire est mimita gheisla,leur cursus est de 3 ans et le master n'est pas obligatoire, 
+      le master quant a lui  les filieres qui sont: gestion des organisations et management, gestion financiere, gestion marketing et commerciale, gestion 
+      logistique et transport
+       
+       `
+  
+    
+    },
+
+    {
+      slug : 'architecture',
+      nom : "Faculte d'architecture",
+      img : Architecture,
+      description : "la faculte d'architecture de l'universite nouveaux horizons",
+      fullDescription:`la faculte d'architecture, l'une de celles qui forment des ingenieurs, forme les futurs architectes de la RDC, ils ont un cursus de 
+      4 ans, qui ete de 3 ans precedemment, la raison de l'ajout d'une annee et qu'on avait remarque que lors des 3 ans les architectes manquait de certaines
+       connaissance pour pouvoir bien comprendre les cours en architecture, alors ils ont ajoute une nouvelle annee et on l'a nommee preparatoire ou prepa 
+       comme on l'appelle plus souvent , on a donc les promotions suivantes : prepa, L1,L2,L3, et aussi ils ont l'obligation de poursuivre avec le master 
+       s'ils veulent pouvoir esperer devenir architecte confirme, et c'est pas tout, apres le master ils doivent faire un stage de 2 ans , si le stage est 
+       valide par celui qui prendra en stage, ils obtiennent un numero d'ordre qui confirme qu'ils sont maintenant architecte, c'est une loi etabli du pays,
+        ils organisent different evenements au cours de l'annee, cette annee en 2026, ils ont introduit archikulture, ou ils presentent leurs maquettes ,
+         dessins et projets au preau, et ils vont aussi dans la meme annee un peu plus tard introduire fiore ou ils vont inviter des experts pour leur montrer
+          leurs travaux et aussi apprendre d'eux, en annee preparatoire ils revoient les cours qu'ils avaient en secondaire comme chimie,physique, 
+          trigonometrie(differentes de celles de secondaire),dessin technique, etudes des formes et maquettes et dessin, ils possedent aussi un cercle 
+          d'architecture, un groupe fait pour se connaitre entre etudiants d'archi de differentes promotions 
        
        `
   
     
     }
+
+
 
   ];
 
