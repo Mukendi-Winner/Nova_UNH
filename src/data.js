@@ -1,6 +1,8 @@
 import UNH from './assets/UNH.png'
 import Batiment from './assets/batiment.png'
 import informatique from './assets/informatique.jpg'
+import SIC from './assets/sic.jpg'
+import Medecine from './assets/medecine.jpg'
 
 
 
@@ -119,7 +121,7 @@ le nombre de personne en salle de cours varie mais c'est touours un nombre adapt
     {
       slug : 'SIC-Multimedia',
       nom : 'Faculté de SIC-Multimedia',
-      img : 'img/x',
+      img : SIC,
       description : "la faculte des sciences de l'information et de la communication + multimedia",
       fullDescription:`la faculte de sciences de l'information et de la communication et multimedia (SIC), est la cadette de toutes les facultes 
       presentes a UNH, elle a comme doyen M.Jacky Mulenga, elle n'a pas de vice-doyen actuellement et en tant que secretaire facultaire madame carine mulopo
@@ -127,7 +129,7 @@ le nombre de personne en salle de cours varie mais c'est touours un nombre adapt
        - maitriser les genres d'ecriture adaptés aux medias du web
        - maitriser les logiciels specialises de gestion d'images et de sons
        - realiser un reportage photographique et/ou filmé d'un evenement
-       - realiser un film (doucmentaire ou fiction)
+       - realiser un film (documentaire ou fiction)
        - realiser un spot publicitaire
        - concevoir des affiches et d'autres supports commerciaux
        
@@ -144,7 +146,7 @@ le nombre de personne en salle de cours varie mais c'est touours un nombre adapt
     {
       slug : 'Faculté de Medecine',
       nom : 'Faculté de Medecine',
-      img : 'img/x',
+      img : Medecine,
       description : "la faculte de medecine",
       fullDescription:`la faculte de medecine d'UNH est l'avant derniere a etre cree, elle forme les futurs medecins de la nation , elle ne dispose pas encore de specialisation pour le moment , elle ne forme qu'en medecine generale, ils etudient 7 ans qui se suivent comme suit : L1,L2,L3,M1,M2,M3,M4
        
